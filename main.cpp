@@ -2,8 +2,14 @@
 
 int main()
 {
-	Point point1(1, 2), point2(4, 6);
-	int result = Point::distanceFunc(point1, point2);
-	cout << "Distance between point equals to " << result << endl;
+	Fraction f1(5, 10), f2(10, 100);
+	cout << "Sum of fractions: ";
+	Fraction::addFunc(f1, f2).print();
+	cout << "Difference of fractions: ";
+	Fraction::subFunc(f1, f2).print();
+	cout << "Product of fractions: ";
+	Fraction::multiplyFunc(f1, f2).print();
+	cout << "Sum of fractions: ";
+	Fraction::divideFunc(f1, f2).print();
 	return 0;
 }
