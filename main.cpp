@@ -2,11 +2,8 @@
 
 int main()
 {
-	Rect rect(5, 10);
-	rect.printRect();
-	rect.resizeRect(10, 10);
-	rect.printRect();
-	rect.relocateRect(5, 5);
-	rect.printRect();
+	Point point1(1, 2), point2(4, 6);
+	int result = Point::distanceFunc(point1, point2);
+	cout << "Distance between point equals to " << result << endl;
 	return 0;
 }
